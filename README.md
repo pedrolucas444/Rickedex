@@ -12,7 +12,7 @@ A Rickedex é um projeto que tem como objetivo aprender sobre o uso e importaç�
 ## HTML e CSS
 
 ### Fonts
-font: Poppins.
+font: Poppins. </br>
 font-weight: Textos comuns: 400(Normal); Títulos: 500(Medium); Botões: 400(Medium);
 
 ### Estilização de botão
