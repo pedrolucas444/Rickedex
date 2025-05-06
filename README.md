@@ -5,26 +5,26 @@ A Rickedex é um projeto que tem como objetivo aprender sobre o uso e importaç�
 - Utilize a barra de pesquisa para buscas com nome
 - Utilize filtros de personagem, espécie ou gênero.
 
-## Tecnologias implementadas
+# Tecnologias implementadas
 
-### HTML e CSS
+## HTML e CSS
 
-#### Fonts
+### Fonts
 font: Poppins.
 font-weight: Textos comuns: 400(Normal); Títulos: 500(Medium); Botões: 400(Medium);
 
-#### Estilização de botão
+### Estilização de botão
 
-#### Estilização de background
+### Estilização de background
 
-A respeito do background utilizei um tema light e um tema dark.
+#### A respeito do background utilizei um tema light e um tema dark.
 
-Tema light:
+#### Tema light:
 background-color:
 text-color:
 card-background:
 
-Tema dark:
+#### Tema dark:
 background-color:
 text-color:
 card-background:
