@@ -28,3 +28,10 @@ card-background:
 background-color:
 text-color:
 card-background:
+
+# API Endpoints
+
+## Requisição de Get em todos os personagens
+```
+GET https://rickandmortyapi.com/api/character
+```
