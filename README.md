@@ -1,5 +1,5 @@
 # Rickedex
-
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 A Rickedex é um projeto que tem como objetivo aprender sobre o uso e importação de API, além de praticar minhas habilidades com as tecnologias Html, Css e Javascript. A aplicação permite que o usuário:
 - Faça pesquisa de personagens ou localizações específicas da série de Rick and Morty.
 - Utilize a barra de pesquisa para buscas com nome
