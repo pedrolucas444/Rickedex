@@ -27,3 +27,93 @@
     border-color: #007bff;
   }
     
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px; /* Espaçamento entre linhas */
+    margin-top:20px;
+  }
+
+  .grid-wrapper {
+    width: 66.66%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }  
+  
+  .card {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100%; /* Garante altura uniforme */
+  }
+
+  
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h2 {
+    max-width: 100%; /* Garante que o título ocupe toda a largura disponível no card */
+    white-space: normal; /* Permite quebras de linha */
+    word-wrap: break-word; /* Quebra o texto se ele for muito longo */
+    font-size: 20px; /* Ajusta o tamanho da fonte, se necessário */
+    text-align: center; /* Mantém o texto centralizado */
+    font-weight: 500;
+}
+
+  
+  .card p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .card-btn {
+    margin-top: auto; /* Garante que o botão vá para o fundo do card */
+    margin: 10px 0 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    box-shadow: 0 0 3px rgba(63, 63, 63, 0.7); /* Efeito de destaque com sombra */
+    margin-bottom: 4px;
+}
+
+.tags-container {
+  display: flex;
+  gap: 8px; /* Espaço entre tags */
+  margin-top: auto; /* Empurra as tags para baixo */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
