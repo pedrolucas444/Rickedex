@@ -42,23 +42,24 @@
   
   .card {
     background-color: white;
-    width: 80%;
+    width: 100%;
+    max-width: 250px;
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease; /* Adicione border à transição */
     display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    height: 100%; /* Garante altura uniforme */
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 2px solid transparent; /* Borda transparente inicial */
   }
-
-  
   
   .card:hover {
     transform: translateY(-5px);
+    border: 2px solid #ccc; /* Borda cinza ao passar o mouse */
   }
   
   .card img {
@@ -116,4 +117,67 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
+}
+
+.character-details {
+  display: none; /* O card grande começa escondido */
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Coloca o card grande à direita */
+  z-index: 100; /* Garante que o card grande fique sobre os outros elementos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.character-details .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.character-details .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.character-details .card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.character-details .card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.character-details .card .tag {
+  margin: 5px 0;
+  background-color: #f4f4f4;
+  color: #333;
+  box-shadow: none;
+}
+
+.character-details #closeDetails {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.character-details #closeDetails:hover {
+  background-color: #D95B3A;
 }

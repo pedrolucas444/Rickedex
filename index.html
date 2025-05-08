@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rickedex</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rickedex</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
-
 <body>
 
+  <div class="search-container">
+    <input type="text" class="searchbar" placeholder="Buscar..." />
+  </div>
 
+  <div class="grid-wrapper">
+    <div class="card-grid" id="cardGrid"></div>
+  </div>
 
-    <div class="search-container">
-        <input type="text" class="searchbar" placeholder="Buscar..." />
+  <!-- Card Grande para exibir detalhes (movido para fora do grid-wrapper) -->
+  <div id="characterDetails" class="character-details">
+    <div class="card">
+      <img src="" alt="" id="detailImage" />
+      <h2 id="detailName"></h2>
+      <p id="detailStatus"></p>
+      <p id="detailSpecies"></p>
+      <p id="detailGender"></p>
+      <p id="detailLocation"></p>
+      <p id="detailOrigin"></p>
+      <button id="closeDetails">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Template do card -->
+  <template id="card-template">
+    <div class="card">
+      <img src="" alt="" />
+      <h2></h2>
+      <div class="tags-container">
+        <p class="tag gender" style="color: white;"></p>
+        <p class="tag species" style="color: white;"></p>
       </div>
-      
-      <div class="grid-wrapper">
-        <div class="card-grid" id="cardGrid"></div>
-      </div>
+    </div>
+  </template>
 
-      <script src="/script.js"></script>
+  <script src="/script.js"></script>
 </body>
-
 </html>
