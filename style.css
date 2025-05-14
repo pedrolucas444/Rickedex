@@ -28,17 +28,20 @@
   }
     
   .card-grid {
+    flex:1;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px; /* Espaçamento entre linhas */
-    margin-top:20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px; /* Espaço entre colunas e linhas */
   }
+  
 
   .grid-wrapper {
     width: 66.66%;
     max-width: 1200px;
     margin: 0 auto;
-  }  
+    padding-right: 400px;
+    position: relative; /* <- Adicionado */
+  } 
   
   .card {
     background-color: white;
@@ -120,18 +123,26 @@
 }
 
 .character-details {
-  display: none; /* O card grande começa escondido */
-  width: 350px;
-  height: auto;
-  padding: 20px;
+  display: block;
+  width: 300px;
+  padding: 10px;
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  position: absolute;
-  top: 20px;
-  right: 20px; /* Coloca o card grande à direita */
-  z-index: 100; /* Garante que o card grande fique sobre os outros elementos */
-  transition: transform 0.3s ease-in-out;
+  position: sticky;
+  top: 20px; /* Coloquei 'px' aqui */
+  align-self: flex-start;
+}
+
+.content-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 20px;
 }
 
 .character-details .card {

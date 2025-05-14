@@ -12,23 +12,24 @@
     <input type="text" class="searchbar" placeholder="Buscar..." />
   </div>
 
-  <div class="grid-wrapper">
-    <div class="card-grid" id="cardGrid"></div>
-  </div>
-
-  <!-- Card Grande para exibir detalhes (movido para fora do grid-wrapper) -->
-  <div id="characterDetails" class="character-details">
-    <div class="card">
-      <img src="" alt="" id="detailImage" />
-      <h2 id="detailName"></h2>
-      <p id="detailStatus"></p>
-      <p id="detailSpecies"></p>
-      <p id="detailGender"></p>
-      <p id="detailLocation"></p>
-      <p id="detailOrigin"></p>
-      <button id="closeDetails">Fechar</button>
+    <div class="content-layout">
+      <div class="card-grid" id="cardGrid"></div>
+    
+      <div id="characterDetails" class="character-details">
+        <div class="detail-card">
+          <img src="" alt="" id="detailImage" />
+          <h2 id="detailName"></h2>
+          <p id="detailStatus"></p>
+          <p id="detailSpecies"></p>
+          <p id="detailGender"></p>
+          <p id="detailLocation"></p>
+          <p id="detailOrigin"></p>
+          <button id="closeDetails">Fechar</button>
+        </div>
+      </div>
     </div>
-  </div>
+    
+  
 
   <!-- Template do card -->
   <template id="card-template">
