@@ -122,18 +122,6 @@
   margin-bottom: 10px;
 }
 
-.character-details {
-  display: block;
-  width: 300px;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  position: sticky;
-  top: 20px; /* Coloquei 'px' aqui */
-  align-self: flex-start;
-}
-
 .content-layout {
   display: flex;
   justify-content: space-between;
@@ -145,50 +133,90 @@
   padding: 20px;
 }
 
-.character-details .card {
+.character-details {
+  display: block;
+  padding: 10px;
+  position: sticky;
+  top: 20px; /* Coloquei 'px' aqui */
+  align-self: flex-start;
+}
+.detail-card {
+  background-color: #1e1e2f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  color: white;
+}
+
+.detail-card img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.detail-card h2 {
+  font-size: 2rem;
+  color: #00bcd4; /* azul claro */
+  margin-bottom: 0.5rem;
+}
+
+.detail-card p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #f0f0f0;
+}
+
+.detail-card h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.4rem;
+  color: #0a0a23;
+  font-weight: bold;
+}
+
+.info-pair {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.info-pair h3 {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.3rem;
+}
+
+.info-box {
+  background-color: #f5f7fa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #0a0a23;
   text-align: center;
+  min-width: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.character-details .card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* sempre 2 colunas */
+  gap: 1rem;
 }
 
-.character-details .card h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 10px 0;
-}
 
-.character-details .card p {
-  margin: 5px 0;
-  color: #555;
-}
-
-.character-details .card .tag {
-  margin: 5px 0;
-  background-color: #f4f4f4;
-  color: #333;
-  box-shadow: none;
-}
-
-.character-details #closeDetails {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background-color: #FF6347;
-  color: white;
+.detail-card button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff4081;
   border: none;
-  border-radius: 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
 }
 
-.character-details #closeDetails:hover {
-  background-color: #D95B3A;
+.detail-card button:hover {
+  background-color: #e91e63;
 }

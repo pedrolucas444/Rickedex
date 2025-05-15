@@ -84,11 +84,11 @@ function showCharacterDetails(character) {
 
   detailImage.src = character.image;
   detailName.textContent = character.name;
-  detailStatus.textContent = `Status: ${character.status}`;
-  detailSpecies.textContent = `Espécie: ${character.species}`;
-  detailGender.textContent = `Gênero: ${character.gender}`;
-  detailLocation.textContent = `Localização: ${character.location.name}`;
-  detailOrigin.textContent = `Origem: ${character.origin.name}`;
+  detailStatus.textContent = `${character.status}`;
+  detailSpecies.textContent = `${character.species}`;
+  detailGender.textContent = `${character.gender}`;
+  detailLocation.textContent = `${character.location.name}`;
+  detailOrigin.textContent = `${character.origin.name}`;
 
   // Torna visível o card grande
   characterDetails.style.display = 'block';
