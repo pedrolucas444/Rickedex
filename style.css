@@ -4,6 +4,17 @@
     font-family: 'Poppins', sans-serif;
   }
   
+.title-container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente (se quiser) */
+  margin-top: 10px;
+}
+
+.logo {
+  width: 25%;      
+  height: auto;
+}
 
 
   .search-container {
@@ -33,15 +44,6 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px; /* Espaço entre colunas e linhas */
   }
-  
-
-  .grid-wrapper {
-    width: 66.66%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-right: 400px;
-    position: relative; /* <- Adicionado */
-  } 
   
   .card {
     background-color: white;
@@ -78,28 +80,6 @@
     text-align: center; /* Mantém o texto centralizado */
     font-weight: 500;
 }
-
-  
-  .card p {
-    margin: 5px 0;
-    color: #555;
-  }
-
-  .card-btn {
-    margin-top: auto; /* Garante que o botão vá para o fundo do card */
-    margin: 10px 0 15px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card-btn:hover {
-    background-color: #0056b3;
-  }
 
   .tag {
     display: inline-block;
@@ -209,7 +189,7 @@
 .detail-card button {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #ff4081;
+  background-color: #007bff;
   border: none;
   border-radius: 8px;
   color: white;
@@ -218,5 +198,5 @@
 }
 
 .detail-card button:hover {
-  background-color: #e91e63;
+  background-color: #00bcd4;
 }
